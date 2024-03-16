@@ -8,79 +8,81 @@
 </head>
 <body>
     <header>
-        <h1>Digital Rain Project</h1>
-        <nav>
-            <ul>
-                <li><a href="#design-and-test">Design and Test</a></li>
-                <li><a href="#algorithm">Algorithm</a></li>
-                <li><a href="#sustainability">Sustainability</a></li>
-                <li><a href="#new-technologies-learned">New Technologies Learned</a></li>
-                <li><a href="#problem-solving">Problem Solving</a></li>
-                <li><a href="#modern-cplusplus">Modern C++</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Digital Rain Project</h1>
+            <nav>
+                <ul>
+                    <li><a href="#design-and-test">Design and Test</a></li>
+                    <li><a href="#algorithm">Algorithm</a></li>
+                    <li><a href="#sustainability">Sustainability</a></li>
+                    <li><a href="#new-technologies-learned">New Technologies Learned</a></li>
+                    <li><a href="#problem-solving">Problem Solving</a></li>
+                    <li><a href="#modern-cplusplus">Modern C++</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
-         <img src="images/Picture1.png" alt="Picture1">
-        <section id="design-and-test">
-            <h2>Design and Test</h2>
-            <p>I adopted an object-oriented approach to encapsulate the Digital Rain simulation's components, including the grid layout, raindrop behaviour, 
-                and rendering mechanism. I designed classes to represent the simulation and individual raindrops, ensuring modularity and extensibility. 
-                This involved defining clear interfaces and data structures to facilitate seamless interaction between components.
-            </p>
-            <!-- Add more details as needed -->
-        </section>
+        <div class="container">
+            <img src="images/Picture1.png" alt="Picture1" class="main-image">
+            <section id="design-and-test">
+                <h2>Design and Test</h2>
+                <p>I adopted an object-oriented approach to encapsulate the Digital Rain simulation's components, including the grid layout, raindrop behaviour, 
+                    and rendering mechanism. I designed classes to represent the simulation and individual raindrops, ensuring modularity and extensibility. 
+                    This involved defining clear interfaces and data structures to facilitate seamless interaction between components.
+                </p>
+            </section>
+            
+            <section id="algorithm">
+                <h2>Algorithm</h2>
+                <img src="images/Picture2.png" alt="Picture2" class="section-image">
+                <h3>Algorithmic approach</h3>
+                <p>The core algorithm behind the Digital Rain simulation revolves around the management of raindrop descent and rendering. Raindrops are 
+                    randomly generated at the top of the screen and gradually descend while leaving a trail of characters behind. The algorithm ensures 
+                    smooth descent and prevents overlap between raindrops, resulting in a visually appealing effect.</p>
+                <h3>Object oriented programming</h3>
+                <p>Object-oriented programming (OOP) played a crucial role in structuring the Digital Rain simulation codebase. Classes such as Digital Rain and Raindrop were designed to encapsulate the simulation's logic and data. 
+                    This modular approach enabled easier maintenance, extensibility, and code reuse. Each class has an interface, promoting clear communication between different components of the simulation.</p>
+                <h3>Sustainability</h3>
+                <img src="images/Picture3.png" alt="Picture3" class="section-image">
+                <p>A key focus throughout the development process was sustainability. This involved writing clean, maintainable code that could withstand 
+                    future changes and enhancements. Comments and documentation were added where necessary to improve code readability and understanding.</p>
+            </section>
 
-        <!-- Repeat this structure for other sections -->
-        
-        <section id="algorithm">
-            <h2>Algorithm</h2>
-            <img src="images/Picture2.png" alt="Picture2">
-            <h3>Algorithmic approach</h3>
-            <p>The core algorithm behind the Digital Rain simulation revolves around the management of raindrop descent and rendering. Raindrops are 
-                randomly generated at the top of the screen and gradually descend while leaving a trail of characters behind. The algorithm ensures 
-                smooth descent and prevents overlap between raindrops, resulting in a visually appealing effect.</p>
-            <h3>Object oriented programming</h3>
-            <p>Object-oriented programming (OOP) played a crucial role in structuring the Digital Rain simulation codebase. Classes such as Digital Rain and Raindrop were designed to encapsulate the simulation's logic and data. 
-                This modular approach enabled easier maintenance, extensibility, and code reuse. Each class has an interface, promoting clear communication between different components of the simulation.</p>
-            <h3>Sustainability</h3>
-            <img src="images/Picture3.png" alt="Picture3">
-            <p>A key focus throughout the development process was sustainability. This involved writing clean, maintainable code that could withstand 
-                future changes and enhancements. Comments and documentation were added where necessary to improve code readability and understanding.</p>
-        </section>
+            <section id="new-technologies-learned">
+                <h2>New Technologies Learned</h2>
+                <img src="images/Picture4.png" alt="Picture4" class="section-image">
+                <p>One of the new technologies I explored was the ANSI escape codes for terminal manipulation. This allowed me to control the cursor movement, 
+                    text colour and formatting enhancing the visual aspect of digital rain. This can be seen below 
+                    Multithreading with std:thread explored multithreading the std::thread library. It was employed to achieve a concurrent execution of the digital rain simulation 
+                    alongside the main program flow, ensuring smooth animations rendering without blocking the user input or the operation. 
+                </p>
+            </section>
 
-        <section id="new-technologies-learned">
-            <h2>New Technologies Learned</h2>
-            <img src="images/Picture4.png" alt="Picture4">
-            <p>One of the new technologies I explored was the ANSI escape codes for terminal manipulation. This allowed me to control the cursor movement, 
-                text colour and formatting enhancing the visual aspect of digital rain. This can be seen below 
-                Multithreading with std:thread explored multithreading the std::thread library. It was employed to achieve a concurrent execution of the digital rain simulation 
-                alongside the main program flow, ensuring smooth animations rendering without blocking the user input or the operation. 
-            </p>
-        </section>
+            <section id="problem-solving">
+                <h2>Problem Solving</h2>
+                <p>Several problem-solving initiatives were undertaken to overcome challenges encountered during development. Optimal raindrop rendering, 
+                    preventing flickering and overlap, required innovative solutions. The introduction of vertical displacement tracking, and manipulation of 
+                    ANSI escape codes played a pivotal role in achieving smooth raindrop descent.
 
-        <section id="problem-solving">
-            <h2>Problem Solving</h2>
-            <p>Several problem-solving initiatives were undertaken to overcome challenges encountered during development. Optimal raindrop rendering, 
-                preventing flickering and overlap, required innovative solutions. The introduction of vertical displacement tracking, and manipulation of 
-                ANSI escape codes played a pivotal role in achieving smooth raindrop descent.
+                    Flashing of the console a flickering effect was solved by rendering. 
+                </p>
+                <!-- Add more details as needed -->
+            </section>
 
-                Flashing of the console a flickering effect was solved by rendering. 
-            </p>
-            <!-- Add more details as needed -->
-        </section>
-
-        <section id="modern-cplusplus">
-            <h2>Modern C++</h2>
-            <p>...</p>
-            <!-- Add more details as needed -->
-        </section>
-
+            <section id="modern-cplusplus">
+                <h2>Modern C++</h2>
+                <p>...</p>
+                <!-- Add more details as needed -->
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <div class="container">
+            <p>&copy; 2024 Your Name</p>
+        </div>
     </footer>
 </body>
 </html>
