@@ -2,23 +2,30 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px; /* Add padding to all sides of the body */
-    box-sizing: border-box; /* Include padding in the total width/height */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 header h1 {
     margin: 0;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -32,16 +39,36 @@ nav ul li a {
 }
 
 main {
-    padding: 20px;
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+img.main-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+img.section-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 0;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: calc(100% - 40px); /* Adjust footer width to accommodate padding */
 }
 
+footer p {
+    margin: 0;
+}
