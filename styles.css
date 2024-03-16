@@ -2,7 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Add padding to all sides of the body */
+    box-sizing: border-box; /* Include padding in the total width/height */
 }
 
 header {
@@ -41,5 +42,6 @@ footer {
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 40px); /* Adjust footer width to accommodate padding */
 }
+
