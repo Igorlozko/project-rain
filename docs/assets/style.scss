@@ -1,3 +1,10 @@
 ---
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import "{{ site.theme }}";
+
+@charset "utf-8";
+
+// Import the main stylesheet from the Minima theme
+@import "{{ site.theme }}/minima";
+
+// Add your custom styles below
